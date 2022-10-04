@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+.mainLoginAndRegister{
+  display: flex;
+  justify-content: space-around;
+}
+.tieude{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
