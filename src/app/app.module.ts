@@ -9,6 +9,7 @@ import {LoginComponent} from "./Btapbuoi4/Login.component";
 import {RegisterComponent} from "./Btapbuoi4/Register.component";
 import {RouterModule, Routes} from "@angular/router";
 import {WeatherComponent} from "./Btapbuoi4/Weather.component";
+import {HttpClientModule} from "@angular/common/http";
 
 const appRoutes: Routes = [
   {path:'',component:LoginComponent},
@@ -22,7 +23,8 @@ const appRoutes: Routes = [
     LoginComponent, RegisterComponent, WeatherComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(appRoutes)
+    BrowserModule, RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
