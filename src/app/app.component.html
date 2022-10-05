@@ -1,8 +1,14 @@
+<nav class="section navigation">
+  <div class="container">
+    <a routerLink="/" class="btn btn-primary m-2">Login</a>
+    <a routerLink="/Register" class="btn btn-warning">Register</a>
+    <a routerLink="/Weather" class="btn btn-warning m-2">Weather</a>
+  </div>
+</nav>
 <section class="section main">
   <div class="container">
-      <div class="mainLoginAndRegister">
-        <Login></Login>
-        <Register></Register>
+      <div class="row">
+        <router-outlet></router-outlet>
       </div>
   </div>
 </section>
