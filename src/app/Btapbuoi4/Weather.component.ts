@@ -14,6 +14,10 @@ export class WeatherComponent {
   constructor(private http: HttpClient) {
   }
 
+  ngOnInit(){
+      this.hanoi()
+  }
+
   hanoi(){
     const url = 'https://api.openweathermap.org/data/2.5/weather?q=Hanoi&appid=09a71427c59d38d6a34f89b47d75975c&units=metric&fbclid=IwAR2O0XEf_yr9je9hUYSvhFLaO4k2CQXr1-uovxNmEuFxB1-Yih01dYqs3Dk'
       this.http.get<any>(url)
